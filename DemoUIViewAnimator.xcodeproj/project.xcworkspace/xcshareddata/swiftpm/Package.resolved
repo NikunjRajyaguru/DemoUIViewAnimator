@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ReusableAuthentication",
+        "repositoryURL": "https://github.com/YogeshPateliOS/ReusableAuthentication.git",
+        "state": {
+          "branch": "master",
+          "revision": "9b33dc0819199fbb247417dc1c346572142f2de8",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

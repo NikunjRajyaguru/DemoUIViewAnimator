@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VNH-3u-boB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoUIViewAnimator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mark-duffel-416969-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="v0a-vn-Ps1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SW7-kP-Ee6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tSo-Zu-Xl5">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="v0a-vn-Ps1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5hg-iq-d8x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="SW7-kP-Ee6" secondAttribute="bottom" id="6Ct-d0-orS"/>
+                            <constraint firstItem="SW7-kP-Ee6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dh0-kG-z9Y"/>
+                            <constraint firstAttribute="top" secondItem="SW7-kP-Ee6" secondAttribute="top" id="bhg-Pw-IYO"/>
+                            <constraint firstItem="v0a-vn-Ps1" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="m2B-c7-U15"/>
+                            <constraint firstAttribute="top" secondItem="v0a-vn-Ps1" secondAttribute="top" id="r5T-ar-PcE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SW7-kP-Ee6" secondAttribute="trailing" id="skF-1C-5Ng"/>
+                            <constraint firstItem="v0a-vn-Ps1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uDL-cU-92H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="100.44642857142857"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="4Np-bP-goS">
+            <objects>
+                <viewController id="VNH-3u-boB" customClass="SecondVC" customModule="DemoUIViewAnimator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4D6-4R-81j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walpaper" translatesAutoresizingMaskIntoConstraints="NO" id="Dvx-o0-k4o">
+                                <rect key="frame" x="0.0" y="244" width="414" height="652"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dvx-o0-k4o" firstAttribute="leading" secondItem="Dpj-Mq-dW0" secondAttribute="leading" id="Jbb-YU-Ydg"/>
+                            <constraint firstItem="Dvx-o0-k4o" firstAttribute="top" secondItem="Dpj-Mq-dW0" secondAttribute="top" constant="200" id="Sq9-FZ-ipK"/>
+                            <constraint firstItem="Dpj-Mq-dW0" firstAttribute="trailing" secondItem="Dvx-o0-k4o" secondAttribute="trailing" id="au5-Yo-v0S"/>
+                            <constraint firstItem="Dvx-o0-k4o" firstAttribute="bottom" secondItem="4D6-4R-81j" secondAttribute="bottom" id="waT-Yp-HcN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dpj-Mq-dW0"/>
+                    </view>
+                    <connections>
+                        <outlet property="img" destination="Dvx-o0-k4o" id="7zU-lw-XcG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6NT-gr-tMK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1015.9420289855074" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mark-duffel-416969-unsplash" width="4410" height="3150"/>
+        <image name="walpaper" width="288" height="512"/>
+    </resources>
+</document>
